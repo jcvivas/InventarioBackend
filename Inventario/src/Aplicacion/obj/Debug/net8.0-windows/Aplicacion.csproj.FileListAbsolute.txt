@@ -1,0 +1,5 @@
+C:\Users\ASUS\Desktop\Prueba tecnica\InventarioBackend\Inventario\src\Aplicacion\obj\Debug\net8.0-windows\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\Prueba tecnica\InventarioBackend\Inventario\src\Aplicacion\obj\Debug\net8.0-windows\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\Prueba tecnica\InventarioBackend\Inventario\src\Aplicacion\obj\Debug\net8.0-windows\Aplicacion.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\Prueba tecnica\InventarioBackend\Inventario\src\Aplicacion\obj\Debug\net8.0-windows\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Prueba tecnica\InventarioBackend\Inventario\src\Aplicacion\obj\Debug\net8.0-windows\Aplicacion.sourcelink.json

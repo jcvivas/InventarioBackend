@@ -61,6 +61,10 @@ namespace Infraestructura.Extensiones
                             };
 
                             respuesta.Code = custom.TipoError.GetEnumMemberValue();
+                            var esInterno = custom.TipoError == TipoErrorEnum.ERROR_INTERNO;
+                            respuesta.Message = esInterno
+                                ? MensajeGenerico(TipoErrorEnum.ERROR_INTERNO)
+                                : (string.IsNullOrWhiteSpace(custom.Message) ? MensajeGenerico(custom.TipoError) : custom.Message);
                             respuesta.Message = string.IsNullOrWhiteSpace(custom.Message)
                                 ? MensajeGenerico(custom.TipoError)
                                 : custom.Message;

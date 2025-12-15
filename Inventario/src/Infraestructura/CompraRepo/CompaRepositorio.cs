@@ -29,10 +29,11 @@ namespace Infraestructura.CompraRepo
         {
             _logger.LogsInit("Repositorio", "ProcesarCompra", new { json });
 
-            var p1 = new SqlParameter("@json", json);
+            var pOpcion = new SqlParameter("@opcion", "procesar");
+            var pJson = new SqlParameter("@json", json);
 
             var lista = await _context.Set<SpProcesarCompraResultado>()
-                .FromSqlRaw("EXEC ventas.sp_procesar_compra @json", p1)
+                .FromSqlRaw("EXEC ventas.sp_procesar_compra @opcion=@opcion, @json=@json", pOpcion, pJson)
                 .AsNoTracking()
                 .ToListAsync(ct);
 
@@ -41,5 +42,7 @@ namespace Infraestructura.CompraRepo
             _logger.LogsEnd("Repositorio", "ProcesarCompra", result);
             return result;
         }
+
+
     }
 }

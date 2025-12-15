@@ -67,7 +67,6 @@ namespace Infraestructura.CategoriaRepo
             var ok = await EjecutarUpsertAsync("catalogo.sp_upsert_categorias", "insertar", json, ct);
             if (!ok) return 0;
 
-            // Recupero id por campo único: nombre
             var todas = await ObtenerTodasAsync(ct);
             var encontrada = todas.FirstOrDefault(x => x.Nombre == entidad.Nombre);
             _logger.LogsEnd("Repositorio", "Insertar Categoria");

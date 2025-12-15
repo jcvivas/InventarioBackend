@@ -1,0 +1,686 @@
+[
+  {
+    "ContainingType": "Api.Controllers.AdminCategoriasController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/admin/categorias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.CategoriaDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Categor\u00EDas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminCategoriasController",
+    "Method": "Create",
+    "RelativePath": "api/v1/admin/categorias",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.CategoriaCrearDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Categor\u00EDas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminCategoriasController",
+    "Method": "Update",
+    "RelativePath": "api/v1/admin/categorias",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.CategoriaActualizarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Categor\u00EDas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminCategoriasController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/admin/categorias/{idCategoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Aplicacion.Modelos.CategoriaDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Categor\u00EDas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminEliminacionController",
+    "Method": "DesactivarCategoria",
+    "RelativePath": "api/v1/admin/categorias/{idCategoria}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategoria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Admin - Eliminaci\u00F3n L\u00F3gica"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminMonitoreoInventarioController",
+    "Method": "MovimientosPorOferta",
+    "RelativePath": "api/v1/admin/inventario/movimientos/{idProductoProveedorLote}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProductoProveedorLote",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.MovimientoInventarioDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Monitoreo Inventario"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminOfertasController",
+    "Method": "Create",
+    "RelativePath": "api/v1/admin/ofertas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.OfertaCrearDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Ofertas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminOfertasController",
+    "Method": "Update",
+    "RelativePath": "api/v1/admin/ofertas",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.OfertaActualizarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Ofertas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminEliminacionController",
+    "Method": "DesactivarOferta",
+    "RelativePath": "api/v1/admin/ofertas/{idProductoProveedorLote}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProductoProveedorLote",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Admin - Eliminaci\u00F3n L\u00F3gica"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminOfertasController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/admin/ofertas/{idProductoProveedorLote}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProductoProveedorLote",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Aplicacion.Modelos.OfertaDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Ofertas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminOfertasController",
+    "Method": "GetPorProducto",
+    "RelativePath": "api/v1/admin/ofertas/producto/{idProducto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.OfertaDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Ofertas"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProductosController",
+    "Method": "Buscar",
+    "RelativePath": "api/v1/admin/productos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "texto",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.ProductoDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Productos"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProductosController",
+    "Method": "Create",
+    "RelativePath": "api/v1/admin/productos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.ProductoCrearDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Productos"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProductosController",
+    "Method": "Update",
+    "RelativePath": "api/v1/admin/productos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.ProductoActualizarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Productos"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminEliminacionController",
+    "Method": "DesactivarProducto",
+    "RelativePath": "api/v1/admin/productos/{idProducto}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Admin - Eliminaci\u00F3n L\u00F3gica"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProductosController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/admin/productos/{idProducto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Aplicacion.Modelos.ProductoDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Productos"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProveedoresController",
+    "Method": "Buscar",
+    "RelativePath": "api/v1/admin/proveedores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "texto",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.ProveedorDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Proveedores"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProveedoresController",
+    "Method": "Create",
+    "RelativePath": "api/v1/admin/proveedores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.ProveedorCrearDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Proveedores"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProveedoresController",
+    "Method": "Update",
+    "RelativePath": "api/v1/admin/proveedores",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Aplicacion.Modelos.ProveedorActualizarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Proveedores"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminEliminacionController",
+    "Method": "DesactivarProveedor",
+    "RelativePath": "api/v1/admin/proveedores/{idProveedor}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProveedor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Admin - Eliminaci\u00F3n L\u00F3gica"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AdminProveedoresController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/admin/proveedores/{idProveedor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProveedor",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Aplicacion.Modelos.ProveedorDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Admin - Proveedores"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/v1/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Api.Controllers.AuthController\u002BLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Auth"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.CompradorComprasController",
+    "Method": "Procesar",
+    "RelativePath": "api/v1/comprador/compras/procesar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "body",
+        "Type": "Api.Controllers.CompradorComprasController\u002BCompraRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comprador - Compras"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.CompradorDeseadosController",
+    "Method": "Get",
+    "RelativePath": "api/v1/comprador/deseados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.DeseadoDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comprador - Deseados"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.CompradorDeseadosController",
+    "Method": "Toggle",
+    "RelativePath": "api/v1/comprador/deseados/{idProducto}/toggle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comprador - Deseados"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.CompradorProductosController",
+    "Method": "Detalle",
+    "RelativePath": "api/v1/comprador/productos/{idProducto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProducto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Aplicacion.Modelos.ProductoDetalleDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comprador - Productos"
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.CompradorProductosController",
+    "Method": "Buscar",
+    "RelativePath": "api/v1/comprador/productos/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "texto",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Aplicacion.Modelos.ProductoBusquedaDto, Aplicacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comprador - Productos"
+    ]
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication1.WeatherForecast, WebApplication1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

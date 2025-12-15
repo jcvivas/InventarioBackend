@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Presentacion</RootNamespace>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>7460e8fb-38ff-49b4-9afe-af245da0822b</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702;1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="HealthCheck\**" />
+		<Compile Remove="logs\**" />
+		<Compile Remove="Services\User\**" />
+		<Content Remove="HealthCheck\**" />
+		<Content Remove="logs\**" />
+		<Content Remove="Services\User\**" />
+		<EmbeddedResource Remove="HealthCheck\**" />
+		<EmbeddedResource Remove="logs\**" />
+		<EmbeddedResource Remove="Services\User\**" />
+		<None Remove="HealthCheck\**" />
+		<None Remove="logs\**" />
+		<None Remove="Services\User\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Properties\launchSettings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<_WebToolingArtifacts Remove="Properties\launchSettings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Properties\launchSettings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.11.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="8.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="9.0.3" />
+		<PackageReference Include="Serilog.Sinks.Debug" Version="3.0.0" />
+		<PackageReference Include="Serilog.Sinks.Trace" Version="4.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
+		<PackageReference Include="NETStandard.Library" Version="2.0.3" />
+		<PackageReference Include="System.Console" Version="4.3.1" />
+		<PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+		<PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+		<PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Aplicacion\Aplicacion.csproj" />
+		<ProjectReference Include="..\Infraestructura\Infraestructura.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Servicios\" />
+	</ItemGroup>
+
+	
+
+</Project>
