@@ -1,0 +1,8 @@
+fornt comprador
+correo:user@user
+pass:123456
+
+front admin
+correo:admin@admin
+pass:123456
+
