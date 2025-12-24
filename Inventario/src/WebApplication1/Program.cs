@@ -27,16 +27,6 @@ builder.SetRegisterDependencies();
 
 
 
-builder.Services.AddCors(opt =>
-{
-    opt.AddPolicy("CorsInventario", policy =>
-    {
-        policy
-            .AllowAnyOrigin()
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
-});
 
 
 

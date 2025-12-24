@@ -48,11 +48,14 @@ namespace Api.IoC
 
         public static WebApplicationBuilder SetCorsCustom(this WebApplicationBuilder builder)
         {
+            var origins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
+                          ?? Array.Empty<string>();
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy(CorsPolicyName, policy =>
                 {
-                    policy.AllowAnyOrigin()
+                    policy.WithOrigins(origins)
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });
